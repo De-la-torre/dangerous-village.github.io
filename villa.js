@@ -18,16 +18,16 @@ var fondo = new Image();
 fondo.src = mapa;
 fondo.addEventListener("load", cargarFondos);
 
-var vaca = new Image();
-vaca.src = "vaca.png";
-vaca.addEventListener("load", cargarVacas);
+var vaca2 = new Image();
+vaca2.src = "vaca2.png";
+vaca2.addEventListener("load", cargarVacas);
 
-var pollo = new Image();
-pollo.src = "pollo.png";
-pollo.addEventListener("load", cargarPollos)
+var gallina2 = new Image();
+gallina2.src = "gallina2.png";
+gallina2.addEventListener("load", cargarPollos)
 
 var cerdo = new Image();
-cerdo.src = "cerdo.png";
+cerdo.src = "cerdo1.png";
 cerdo.addEventListener("load", cargarCerdos)
 
 
@@ -44,7 +44,7 @@ function cargarVacas()
         var y = aleatorio(0, 5);
         var x = x * 60;
         var y = y * 60;
-        papel.drawImage(vaca, x, y);
+        papel.drawImage(vaca2, x, y);
     }
 }
 
@@ -57,7 +57,7 @@ function cargarPollos()
         var y = aleatorio(0, 5);
         var x = x * 60;
         var y = y * 60;
-        papel.drawImage(pollo, x, y);
+        papel.drawImage(gallina2, x, y);
     }
 }
 function cargarCerdos()
